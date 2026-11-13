@@ -53,15 +53,12 @@ export const PdfStudio: React.FC<{ lang: Lang }> = ({ lang }) => {
   const [busy, setBusy] = useState(false);
   const [toast, setToast] = useState<string | null>(null);
 
-  // 1. Merge state
   const [mergeList, setMergeList] = useState<MergeItem[]>([]);
 
-  // 2. Split / Organize state
   const [splitBytes, setSplitBytes] = useState<Uint8Array | null>(null);
   const [splitName, setSplitName] = useState<string>('document');
   const [pages, setPages] = useState<PdfPagePreview[]>([]);
 
-  // 3. Sign state
   const [signBytes, setSignBytes] = useState<Uint8Array | null>(null);
   const [signName, setSignName] = useState<string>('contract');
   const [signTotalPages, setSignTotalPages] = useState<number>(0);
@@ -80,7 +77,6 @@ export const PdfStudio: React.FC<{ lang: Lang }> = ({ lang }) => {
   const isDrawingRef = useRef(false);
   const previewBoxRef = useRef<HTMLDivElement | null>(null);
 
-  // 4. Convert & Watermark state
   const [imgFiles, setImgFiles] = useState<File[]>([]);
   const [imgPageMode, setImgPageMode] = useState<'a4' | 'fit'>('a4');
   const [wmBytes, setWmBytes] = useState<Uint8Array | null>(null);
@@ -125,7 +121,6 @@ export const PdfStudio: React.FC<{ lang: Lang }> = ({ lang }) => {
     };
   }, [signBytes, signPageIdx]);
 
-  // --- Merge handlers ---
   const handleAddMergeFiles = async (fileList: FileList | null) => {
     if (!fileList || fileList.length === 0) return;
     setBusy(true);
@@ -190,7 +185,6 @@ export const PdfStudio: React.FC<{ lang: Lang }> = ({ lang }) => {
     }
   };
 
-  // --- Split handlers ---
   const loadSplitPdf = async (bytes: Uint8Array, name: string) => {
     setBusy(true);
     try {
@@ -244,7 +238,6 @@ export const PdfStudio: React.FC<{ lang: Lang }> = ({ lang }) => {
     }
   };
 
-  // --- Sign handlers ---
   const loadSignDocument = async (bytes: Uint8Array, name: string) => {
     setBusy(true);
     try {
@@ -343,7 +336,6 @@ export const PdfStudio: React.FC<{ lang: Lang }> = ({ lang }) => {
     }
   };
 
-  // --- Convert & Watermark handlers ---
   const handleImagesToPdf = async () => {
     if (imgFiles.length === 0) return;
     setBusy(true);

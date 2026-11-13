@@ -41,7 +41,7 @@ export const QrStudio: React.FC<{ lang: Lang }> = ({ lang }) => {
   const [vcOrg, setVcOrg] = useState('Open Source Contributor');
   const [vcPhone, setVcPhone] = useState('+6281234567890');
   const [vcEmail, setVcEmail] = useState('hello@example.com');
-  const [textVal, setTextVal] = useState('100% Static & Permanent QR Code — Zero Subscriptions.');
+  const [textVal, setTextVal] = useState('Static & permanent QR code generated locally.');
 
   // Styling fields
   const [dotStyle, setDotStyle] = useState<DotStyle>('rounded');
