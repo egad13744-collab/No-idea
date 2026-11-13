@@ -53,9 +53,9 @@ export const InvoiceStudio: React.FC<{ lang: Lang }> = ({ lang }) => {
   const [issueDate, setIssueDate] = useState<string>('2026-11-13');
   const [dueDate, setDueDate] = useState<string>('2026-11-27');
 
-  const [senderName, setSenderName] = useState<string>('Egandika Creative Studio');
+  const [senderName, setSenderName] = useState<string>('Egandika');
   const [senderDetails, setSenderDetails] = useState<string>(
-    'Jakarta / East Java, Indonesia\nhello@studio.dev'
+    'East Java, Indonesia\negad13744@gmail.com'
   );
   const [clientName, setClientName] = useState<string>('PT Nusantara Digital');
   const [clientDetails, setClientDetails] = useState<string>(

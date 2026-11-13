@@ -2,7 +2,7 @@
   "name": "no-idea",
   "private": false,
   "version": "1.0.0",
-  "description": "No idea why basic everyday tools require a monthly subscription. 100% free, client-side, open-source suite for PDFs, QR Codes, Screenshot Mockups, Invoices, and Image Optimization.",
+  "description": "Free client-side web tools for PDFs, static QR codes, screenshot frames, invoices, and batch image compression.",
   "type": "module",
   "license": "MIT",
   "author": "Egandika (@egad13744-collab)",

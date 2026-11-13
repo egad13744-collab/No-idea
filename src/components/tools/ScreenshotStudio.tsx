@@ -95,7 +95,7 @@ function generateDemoScreenshotDataUrl(): string {
     { t: '$ cd No-idea && npm install && npm run dev', c: '#94a3b8' },
     { t: '✓ Local PDF Engine initialized (0 network calls)', c: '#10b981' },
     { t: '✓ Static Never-Expiring QR Renderer ready', c: '#10b981' },
-    { t: '✓ 2x Retina Screenshot Studio unlocked — $0 forever', c: '#38bdf8' },
+    { t: '✓ 2x Retina Screenshot export ready ($0)', c: '#38bdf8' },
   ];
 
   ctx.font = '500 18px ui-monospace, SFMono-Regular, Menlo, monospace';

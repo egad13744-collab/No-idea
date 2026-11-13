@@ -358,7 +358,7 @@ export async function createSamplePdf(variant: 'contract' | 'report'): Promise<U
             showSignBox: true,
           },
           {
-            title: 'SCHEDULE A — TECHNICAL SPECIFICATIONS',
+            title: 'SCHEDULE A - TECHNICAL SPECIFICATIONS',
             subtitle: 'Page 2 of 3 · Client-Side Processing Verification',
             lines: [
               'PRIVACY GUARANTEE:',
@@ -378,7 +378,7 @@ export async function createSamplePdf(variant: 'contract' | 'report'): Promise<U
               'in this sample agreement.',
               '',
               'Client Representative: Alex Rivera',
-              'Contractor: Egandika Open Source Studio',
+              'Contractor: Egandika',
               '',
               'Place your digital signature anywhere in the box below:',
             ],
@@ -398,7 +398,7 @@ export async function createSamplePdf(variant: 'contract' | 'report'): Promise<U
             showSignBox: false,
           },
           {
-            title: 'APPENDIX — COST COMPARISON',
+            title: 'APPENDIX - COST COMPARISON',
             subtitle: 'Page 2 of 2 · SaaS Subscriptions Saved',
             lines: [
               '- PDF Editor & Signer: $19/mo -> $0',
