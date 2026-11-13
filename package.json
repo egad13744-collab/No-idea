@@ -1,0 +1,48 @@
+{
+  "name": "no-idea",
+  "private": false,
+  "version": "1.0.0",
+  "description": "No idea why basic everyday tools require a monthly subscription. 100% free, client-side, open-source suite for PDFs, QR Codes, Screenshot Mockups, Invoices, and Image Optimization.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Egandika (@egad13744-collab)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/egad13744-collab/No-idea.git"
+  },
+  "keywords": [
+    "open-source",
+    "free-tools",
+    "pdf-tools",
+    "qr-code-generator",
+    "screenshot-mockup",
+    "invoice-generator",
+    "image-compressor",
+    "privacy-first",
+    "client-side"
+  ],
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "dependencies": {
+    "jszip": "^3.10.1",
+    "lucide-react": "^0.469.0",
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^4.10.38",
+    "qrcode": "^1.5.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.0.9",
+    "@types/qrcode": "^1.5.5",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "tailwindcss": "^4.0.9",
+    "typescript": "^5.7.3",
+    "vite": "^6.2.0",
+    "@vitejs/plugin-react": "^4.3.4"
+  }
+}
